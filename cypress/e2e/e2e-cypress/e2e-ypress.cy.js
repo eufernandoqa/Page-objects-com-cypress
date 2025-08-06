@@ -40,7 +40,7 @@ describe('Exercicios Cypress', () => {
             Dropdowns.selectValorListEImprimi('Argentina') //Selecionando um valor da lsta e imprimindo
 
         });
-        it.only('Validações de Alerts (Alertas)', () => {
+        it('Validações de Alerts (Alertas)', () => {
 
             Alerts.confirmaAlertaSimples() //Confirmar um alerta simples que exibe apenas OK
             Alerts.confirmaOuCancelaAlert()//Confirmar ou Cancelar um alerta que exibe OK e Cancelar

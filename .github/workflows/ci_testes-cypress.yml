@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.5.3
-      - name: Cypress.io rodando testes chrome
-        uses: cypress-io/github-action@v5.8.2
+        uses: actions/checkout@v4
+      - name: Cypress.io rodando testes chrome  
+        uses: cypress-io/github-action@v6.10.1
         with:
           command: npx cypress run --browser chrome
 #========================================================
       - name: Prints de execução de testes
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-screenshots-chrome
@@ -21,7 +21,7 @@ jobs:
           retention-days: 1
 #========================================================
       - name: Videos da execução de testes
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cypress-videos-chrome
@@ -45,4 +45,3 @@ jobs:
 #Na linha 21 informo que esses documentos vão estar disponíveis para downloads por 1 dia (o máximo é 90)
 #Na linha 28 eu coloco o nome da execução dentro do upload dos arquivo como sendo o cypresso-videos-chrome
 #Na linha 29 eu informei o caminho de onde os arquivos após gerados serão armazenados para download também
-

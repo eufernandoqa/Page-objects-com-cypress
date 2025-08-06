@@ -1,0 +1,3 @@
+{
+    "incrude": ["./node_modules/cypress", "cypress/**/*.js"]
+}

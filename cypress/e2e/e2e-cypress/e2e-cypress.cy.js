@@ -2,10 +2,11 @@ import InputEntrada from '../../support/Pages/Entradas';
 import Buttons from '../../support/Pages/Buttons';
 import Dropdowns from '../../support/Pages/Dropdowns';
 import Alerts from '../../support/Pages/Alerts';
+import Waits from '../../support/Pages/Waits';
 
 
 
-describe.only('Exercicios Cypress', () => {
+describe('Exercicios Cypress', () => {
 
     context('Validações diversas', () => {
 
@@ -133,6 +134,10 @@ describe.only('Exercicios Cypress', () => {
                 expect(quantidade).to.eq(20);
             });
 
+        });
+
+        it.only('Interagir com Waits (Aguardar para depois realizar ação', () => {
+            Waits.FuncaoWait()
         });
 
     });

@@ -5,7 +5,7 @@ import Alerts from '../../support/Pages/Alerts';
 
 
 
-describe('Exercicios Cypress', () => {
+describe.only('Exercicios Cypress', () => {
 
     context('Validações diversas', () => {
 
